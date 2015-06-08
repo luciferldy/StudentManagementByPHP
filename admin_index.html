@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员主页</title>
+</head>
+<body>
+<h2>管理员主页</h2>
+<button id="add_stu" value="添加学生" onclick="add_stu()">添加学生</button>
+<button id="query_stu" value="查询学生" onclick="query_stu()">查询学生</button>
+<button type="button" value="返回主页" onclick="return_home()">返回主页</button>
+<script type="text/javascript">
+    function add_stu(){
+        location.href="add_stu.html";
+    }
+    function query_stu(){
+        location.href="query_stu.php";
+    }
+    function return_home(){
+        location.href = "index.html";
+    }
+</script>
+</body>
+</html>
