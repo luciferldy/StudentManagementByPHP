@@ -29,9 +29,10 @@ if(isset($_REQUEST['internet'])){
         $hobby = "";
     else
     {
+        # 将爱好拼接成字符串
         $hobby = $checkbox[0];
         for($i = 1 ; $i < count($checkbox); $i++){
-            $hobby = "#".$checkbox[$i];
+            $hobby .= "#".$checkbox[$i];
         }
     }
 
@@ -42,61 +43,87 @@ $remark = $_REQUEST["remark"];
 
 # handle password
 if($password != $re_password){
-    echo "<script>alert(\"两次输入的密码不一致\");
-                    location.href=\"add_stu.html\";</script>>";
+    echo "<script>location.href=\"add_stu.html\"</script>";
+    return;
+}
+# 文件处理发生错误
+$avatar = handleFile($student_number);
+if(!$avatar){
+    echo "<script>location.href=\"add_stu.html\"</script>";
     return;
 }
 
-# handle the file
-echo $_FILES["file"]["type"];
-if (($_FILES["file"]["type"] == "image/jpeg")
-    && ($_FILES["file"]["size"] < 1024000))
-{
-    if ($_FILES["file"]["error"] > 0)
-    {
-        echo "Error: " . $_FILES["file"]["error"] . "<br />";
-    }
-    else
-    {
-        echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-        echo "Type: " . $_FILES["file"]["type"] . "<br />";
-        echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-        echo "Stored in: " . $_FILES["file"]["tmp_name"];
-
-        # store the image
-        if (file_exists("upload/" . $student_number.".jpg"))
-        {
-            echo "upload/" . $student_number.".jpg" . " already exists. ";
-        }
-        else
-        {
-            move_uploaded_file($_FILES["file"]["tmp_name"],
-                "upload/" . $student_number.".jpg");
-            echo "Stored in: " . "upload/" . $student_number.".jpg";
-            $avatar = "upload/" . $student_number.".jpg";
-        }
-    }
-
-}
-else
-{
-    echo "Invalid file";
-    return;
-}
 
 $db = new SQLite3("student.sqlite");
 $insert = "insert into student VALUES ( '$name', '$password', $class, $student_number, '$sex',
  '$hobby', $grade, '$remark', '$avatar');";
 $query = "select * from student WHERE student_number = $student_number";
 
-echo $insert;
-$result = $db->exec($insert);
+# check if db has this one
+$result = $db->query($query);
 if(!$result){
-    echo "<script>alert(\"db wrong\")</script>";
+    echo "<script>alert(\"db error\");location.href=\"add_stu.html\"</script>";
 }else{
-    echo "<script>alert(\"success\")</script>";
+    $item = $result->fetchArray();
+    if(!$item){
+        # 如果数据库中没有这个学号，插入
+        echo $insert;
+        $result = $db->exec($insert);
+        if(!$result){
+            echo "<script>alert(\"db wrong\");location.href=\"add_stu.html\"</script>";
+        }else{
+            echo "<script>alert(\"success\");location.href=\"admin_index.html\";</script>";
+        }
+        $db->close();
+    }else{
+        # 数据库中有这个学号，爆出错误
+        echo "<script>alert(\"this one exists\");location.href=\"add_stu.html\"</script>";
+        $db->close();
+    }
 }
-# 跳转到管理员主页
-echo "<script>location.href=\"admin_index.html\";</script>";
+
+function handleFile($student_number){
+    # handle the file
+    echo $_FILES["file"]["type"];
+    if (($_FILES["file"]["type"] == "image/jpeg")
+        && ($_FILES["file"]["size"] < 1024000))
+    {
+        if ($_FILES["file"]["error"] > 0)
+        {
+            echo "Error: " . $_FILES["file"]["error"] . "<br />";
+            echo "<script>alert(\"file error\")</script>";
+            return false;
+        }
+        else
+        {
+            echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+            echo "Type: " . $_FILES["file"]["type"] . "<br />";
+            echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+            echo "Stored in: " . $_FILES["file"]["tmp_name"];
+
+            # store the image
+            if (file_exists("upload/" . $student_number.".jpg"))
+            {
+                echo "upload/" . $student_number.".jpg" . " already exists. ";
+                echo "<script>alert(\"this student number has exist!\")</script>";
+                return false;
+            }
+            else
+            {
+                move_uploaded_file($_FILES["file"]["tmp_name"],
+                    "upload/" . $student_number.".jpg");
+                echo "Stored in: " . "upload/" . $student_number.".jpg";
+                $avatar = "upload/" . $student_number.".jpg";
+                return $avatar;
+            }
+        }
+
+    }
+    else
+    {
+        echo "<script>alert(\"Invalid file\")</script>";
+        return false;
+    }
+}
 
 ?>
