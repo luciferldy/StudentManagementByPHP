@@ -3,21 +3,30 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>学生管理</title>
+    <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet" />
 </head>
 <body>
-<h2>学生管理系统</h2>
-<form action="log_in_auth.php">
-    用户名：
-    <input type="text" name="user_name" required>
+<div class="row">
+    <div class="large-6 large-offset-3">
+        <h2>学生管理系统</h2>
+    </div>
     <br>
-    密码：
-    <input type="password" name="password" required>
-    <br>
-    <input type="radio" name="level" value="administrator" checked="checked"> 管理员<br>
-    <input type="radio" name="level" value="student"> 学生<br>
-    <input type="submit" value="submit">
-    <input type="reset" value="reset">
-</form>
 </div>
+<div class="row">
+    <form class="large-4 large-offset-4" action="log_in_auth.php">
+        <label>用户名</label>
+        <input type="text" name="user_name" required>
+        <label>密码</label>
+        <input type="password" name="password" required>
+        <input id="administrator" type="radio" name="level" value="administrator" checked="checked">
+        <label for="administrator">管理员</label>
+        <input id="student" type="radio" name="level" value="student">
+        <label for="student">学生</label>
+        <br><br>
+        <input class="small radius button left" type="submit" value="submit">
+        <input class="small radius button right" type="reset" value="reset">
+    </form>
+</div>
+
 </body>
 </html>

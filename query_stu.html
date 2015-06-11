@@ -3,34 +3,49 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>查找学生</title>
+    <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet">
 </head>
 <body>
-<h2>查找学生</h2>
-<form action="query_stu.php" method="post">
-    Name:
-    <input type="text" name="name"/><br>
-    Class:
-    <select name="class">
-        <option name="0" value="0">无</option>
-        <option name="1" value="1">1</option>
-        <option name="2" value="2">2</option>
-    </select>
-    <br>
-    Student Number:
-    <input type="number" name="stu_number"/><br>
-    Sex:<br>
-    <input type="radio" value="male" name="sex"/> Male <br>
-    <input type="radio" value="female" name="sex"/> Female <br>
-    Hobby:<br>
-    <input type="checkbox" name="internet[]" value="cs">CS<br>
-    <input type="checkbox" name="internet[]" value="economics">Economics<br>
-    <input type="checkbox" name="internet[]" value="trip">Trip<br>
-    <input type="checkbox" name="internet[]" value="sleep">Sleep<br>
-    Grade:
-    <input type="number" name="grade" max="100" min="0"><br>
-    <input type="submit" value="submit">
-    <input type="reset" value="reset">
+<div class="row">
+    <div class="large-6 large-offset-3">
+        <h2>查找学生</h2>
+    </div>
+</div>
+<div class="row">
+    <form class="large-4 large-offset-4" action="query_stu.php" method="post">
+        <label>Name</label>
+        <input type="text" name="name"/>
+        <label>Class</label>
+        <select name="class">
+            <option name="0" value="0">无</option>
+            <option name="1" value="1">1</option>
+            <option name="2" value="2">2</option>
+        </select>
+        <label>Student Number</label>
+        <input type="number" name="stu_number"/>
+        <label>Sex</label>
+        <input id="male" type="radio" name="sex" value="male"/>
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="sex" value="female" />
+        <label for="female"> Female</label><br>
+        <label>Hobby</label>
+        <input id="cs" type="checkbox" name="internet[]" value="cs"/>
+        <label for="cs">CS</label>
+        <br>
+        <input id="economics" type="checkbox" name="internet[]" value="economics"/>
+        <label for="economics">Economics</label>
+        <br>
+        <input id="trip" type="checkbox" name="internet[]" value="trip"/>
+        <label for="trip">Trip</label>
+        <br>
+        <input id="sleep" type="checkbox" name="internet[]" value="sleep"/>
+        <label for="sleep">Sleep</label>
+        <label>Grades</label>
+        <input type="number" name="grades" min="0" max="100"/><br>
+        <input class="small radius button left" type="submit" value="submit">
+        <input class="small radius button right" type="reset" value="reset">
 
-</form>
+    </form>
+</div>
 </body>
 </html>

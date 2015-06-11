@@ -5,7 +5,13 @@
     <title>管理员查找学生</title>
 </head>
 <body>
-<h2>管理员查找学生</h2>
+<div class="row">
+    <div class="large-6 large-offset-3">
+        <h2>管理员查找学生</h2>
+    </div>
+</div>
+<div>
+    <table>
 <?php
 /**
  * Created by PhpStorm.
@@ -80,10 +86,22 @@ if(!$result){
     echo "db error";
 }else{
     while($item = $result->fetchArray()){
-        echo $item['name']."<br>";
+        $tr = "<tr>";
+        $tr .= "<td><img src=".$item['avatar']."/></td>";
+        $tr .= "<td>".$item['name']."</td>";
+        $tr .= "<td>".$item['class']."</td>";
+        $tr .= "<td>".$item['student_number']."</td>";
+        $tr .= "<td>".$item['sex']."</td>";
+        $tr .= "<td>".$item['hobby']."</td>";
+        $tr .= "<td>".$item['grade']."</td>";
+        $tr .= "<td>".$item['remark']."</td>";
+        $tr .= "</tr>";
+        echo $tr;
     }
 }
 $db->close();
 ?>
+    </table>
+</div>
 </body>
 </html>

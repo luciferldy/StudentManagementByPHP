@@ -2,53 +2,61 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>管理员添加学生</title>
+    <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet" />
 </head>
 <body>
-<h2>管理员添加学生</h2>
-<form action="add_stu.php" method="post" enctype="multipart/form-data">
-    Name:
-    <input type="text" name="name" required/>
-    <br>
-    Password:
-    <input type="password" name="password" required />
-    <br>
-    Confirm Password:
-    <input type="password" name="confirm_pwd" required/>
-    <br>
-    Class:
-    <select name="class">
-        <option name="1" value="1">1</option>
-        <option name="2" value="2">2</option>
-    </select>
-    <br>
-    Student Number:
-    <input type="text" name="std_number" required/>
-    <br>
-    Sex:<br>
-    <input type="radio" name="sex" value="male" checked="checked"/> Male<br>
-    <input type="radio" name="sex" value="female" /> Female<br>
-    Hobby:<br>
-    <input type="checkbox" name="internet[]" value="cs"/> CS
-    <br>
-    <input type="checkbox" name="internet[]" value="economics"/> Economics
-    <br>
-    <input type="checkbox" name="internet[]" value="trip"/> Trip
-    <br>
-    <input type="checkbox" name="internet[]" value="sleep"/> Sleep
-    <br>
-    Avatar<br>
-    <input type="file" name="file" required="required">
-    <br>
-    Grades
-    <input type="number" name="grades" min="0" max="100" value="0"/>
-    <br>
-    Remark
-    <input type="text" name="remark" value=""/>
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-</form>
+<div class="row">
+    <div class="large-6 large-offset-3 columns">
+        <h2>管理员添加学生</h2>
+    </div>
+</div>
+<div class="row">
+    <form action="add_stu.php" method="post" enctype="multipart/form-data" class="large-4 large-offset-4">
+        <label>Name</label>
+        <input type="text" name="name" required/>
+        <label>Password</label>
+        <input type="password" name="password" required />
+        <label>Confirm Password</label>
+        <input type="password" name="confirm_pwd" required/>
+        <label>Class</label>
+        <select name="class">
+            <option name="1" value="1">1</option>
+            <option name="2" value="2">2</option>
+        </select>
+        <label>Student Number</label>
+        <input type="text" name="std_number" required/>
+        <label>Sex:</label>
+        <input id="male" type="radio" name="sex" value="male" checked="checked"/>
+        <label for="male">Male</label> <br>
+        <input id="female" type="radio" name="sex" value="female" />
+        <label for="female"> Female</label><br>
+        <label>Hobby</label>
+        <input id="cs" type="checkbox" name="internet[]" value="cs"/>
+        <label for="cs">CS</label>
+        <br>
+        <input id="economics" type="checkbox" name="internet[]" value="economics"/>
+        <label for="economics">Economics</label>
+        <br>
+        <input id="trip" type="checkbox" name="internet[]" value="trip"/>
+        <label for="trip">Trip</label>
+        <br>
+        <input id="sleep" type="checkbox" name="internet[]" value="sleep"/>
+        <label for="sleep">Sleep</label>
+        <br>
+        <label>Avatar</label>
+        <input type="file" name="file" required="required">
+        <br>
+        <label>Grades</label>
+        <input type="number" name="grades" min="0" max="100" value="0"/>
+        <label>Remark</label>
+        <input type="text" name="remark" value=""/>
+        <br>
+        <br>
+        <input class="small radius button left off" type="submit" value="Submit" >
+        <input class="small radius button right" type="reset" value="Reset">
+    </form>
+</div>
 </body>
 </html>
