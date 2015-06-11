@@ -25,17 +25,11 @@ $hobby = "";
 
 if(isset($_REQUEST['internet'])){
     $checkbox = $_REQUEST['internet'];
+    echo $_REQUEST['internet'];
     if(count($checkbox)==0)
         $hobby = "";
     else
-    {
-        # 将爱好拼接成字符串
-        $hobby = $checkbox[0];
-        for($i = 1 ; $i < count($checkbox); $i++){
-            $hobby .= "#".$checkbox[$i];
-        }
-    }
-
+    $hobby = implode(",",$checkbox);
 }
 
 $grade = $_REQUEST["grades"];

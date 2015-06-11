@@ -20,13 +20,7 @@ if(isset($_REQUEST['internet'])){
     if(count($checkbox)==0)
         $hobby = "";
     else
-    {
-        # 将爱好拼接成字符串
-        $hobby = $checkbox[0];
-        for($i = 1 ; $i < count($checkbox); $i++){
-            $hobby .= "#".$checkbox[$i];
-        }
-    }
+    $hobby = implode(",", $checkbox);
 
 }
 
@@ -39,14 +33,61 @@ if($password != $re_password){
     return;
 }
 
+if($_FILES['file']['name']!=null){
+    var_dump($_FILES['file']);
+    # 文件处理发生错误
+    $avatar = handleFile($student_number);
+    if(!$avatar){
+        echo "<script>location.href=\"student_index.php?id=$student_number\"</script>";
+        return;
+    }
+}
 
 $db = new SQLite3("student.sqlite");
-$update = "update student set name='$name' AND password='$password' AND student.hobby='$hobby' AND student.remark='$remark' WHERE student_number=$student_number;";
+$update = "UPDATE student SET password='$password', name='$name', hobby='$hobby', remark='$remark' WHERE student_number=$student_number;";
+echo $update;
+echo $name;
 $result = $db->exec($update);
 if(!$result){
     echo "<script>alert(\"db error\");location.href=\"student_index.php?id=$student_number\"</script>";
 }else{
     echo "<script>alert(\"success\");location.href=\"student_index.php?id=$student_number\"</script>";
 }
+$db->close();
 
+function handleFile($student_number){
+    # handle the file
+    echo $_FILES["file"]["type"];
+    if (($_FILES["file"]["type"] == "image/jpeg")
+        && ($_FILES["file"]["size"] < 1024000))
+    {
+        if ($_FILES["file"]["error"] > 0)
+        {
+            echo "Error: " . $_FILES["file"]["error"] . "<br />";
+            echo "<script>alert(\"file error\")</script>";
+            return false;
+        }
+        else
+        {
+            echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+            echo "Type: " . $_FILES["file"]["type"] . "<br />";
+            echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+            echo "Stored in: " . $_FILES["file"]["tmp_name"];
+
+            # store the image
+            move_uploaded_file($_FILES["file"]["tmp_name"],
+                "upload/" . $student_number.".jpg");
+            echo "Stored in: " . "upload/" . $student_number.".jpg";
+            $avatar = "upload/" . $student_number.".jpg";
+            return $avatar;
+
+        }
+
+    }
+    else
+    {
+        echo "<script>alert(\"Invalid file\")</script>";
+        return false;
+    }
+}
 ?>

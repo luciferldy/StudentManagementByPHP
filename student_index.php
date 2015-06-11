@@ -45,9 +45,8 @@ else{
         Hobby:<br>
         <?php
         var_dump($item['hobby']);
-        $hobby = explode('#', $item['hobby']);
+        $hobby = explode(',', $item['hobby']);
         # var_dump($hobby);
-
         ?>
         <input id="cs" type="checkbox" name="internet[]" value="cs"  <?php if(in_array("cs", $hobby)){echo "checked";}?> />
         <label for="cs"></label>
@@ -62,12 +61,14 @@ else{
         <label for="sleep"></label>
         <br>
         <label>Avatar</label>
-        <img src="<?php echo $item['avatar'];?>" />
+        <img class="th" src="<?php echo $item['avatar'];?>" /><br><br>
+        <label>Upload</label>
+        <input type="file" name="file">
         <br>
         <label>Grades</label>
-        <input type="number" name="grades" min="0" max="100" value="<?php echo $item['grade'];?>" readonly/>
+        <input type="number" name="grades" min="0" max="100" value="<?php echo $item['grade'];?>" readonly >
         <label>Remark</label>
-        <input type="text" name="remark" value="<?php echo $item['remark'];?>" />
+        <textarea name="remark"><?php echo $item['remark'];?></textarea>
         <br>
         <br>
         <input class="small radius button left" type="submit" value="Update">

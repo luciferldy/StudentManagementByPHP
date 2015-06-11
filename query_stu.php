@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>管理员查找学生</title>
+    <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="row">
@@ -10,8 +11,21 @@
         <h2>管理员查找学生</h2>
     </div>
 </div>
-<div>
-    <table>
+<div class="row">
+    <table class="large-12">
+        <thead>
+        <tr>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Student Number</th>
+            <th>Sex</th>
+            <th>Hobby</th>
+            <th>Grade</th>
+            <th>Remark</th>
+        </tr>
+        </thead>
+        <tbody>
 <?php
 /**
  * Created by PhpStorm.
@@ -87,7 +101,7 @@ if(!$result){
 }else{
     while($item = $result->fetchArray()){
         $tr = "<tr>";
-        $tr .= "<td><img src=".$item['avatar']."/></td>";
+        $tr .= "<td class='large-1'><img src=".$item['avatar']."/></td>";
         $tr .= "<td>".$item['name']."</td>";
         $tr .= "<td>".$item['class']."</td>";
         $tr .= "<td>".$item['student_number']."</td>";
@@ -101,6 +115,7 @@ if(!$result){
 }
 $db->close();
 ?>
+        </tbody>
     </table>
 </div>
 </body>
