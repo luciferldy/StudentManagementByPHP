@@ -80,7 +80,7 @@ else{
         <input type="file" name="file">
         <br>
         <label>Grades</label>
-        <input type="number" name="grades" min="0" max="100" value="<?php echo $item['grade'];?>" readonly >
+        <input type="number" name="grades" min="0" max="100" value="<?php echo $item['grade'];?>" readonly required="required">
         <label>Remark</label>
         <textarea name="remark"><?php echo $item['remark'];?></textarea>
         <br>

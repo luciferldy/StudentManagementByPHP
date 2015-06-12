@@ -30,8 +30,12 @@ if(isset($_REQUEST['internet'])){
     else
         $hobby = implode(",",$checkbox);
 }
+# grade
+if(isset($_REQUEST["grades"]))
+    $grade = $_REQUEST["grades"];
+else
+    $grade = 0;
 
-$grade = $_REQUEST["grades"];
 if(isset($_REQUEST["remark"]))
     $remark = $_REQUEST["remark"];
 else
