@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <title>管理员查找学生</title>
     <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet">
+    <link href="foundation-5.5.0/css/custom.css" rel="stylesheet" />
 </head>
 <body>
-<div class="row">
-    <div class="large-6 large-offset-3">
-        <h2>管理员查找学生</h2>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="index.html">Home</a></h1>
+        </li>
+    </ul>
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul>
+            <li><a href="add_stu.html">Add Student</a></li>
+            <li><a href="query_stu.html">Query Student</a></li>
+        </ul>
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li><a href="https://github.com/MaybeMercy/StudentManagementByPHP">Fork me on GitHub</a></li>
+        </ul>
+    </section>
+</nav>
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>查询结果</h2>
+        </div>
     </div>
-</div>
+</header>
 <div class="row">
     <table class="large-12">
         <thead>

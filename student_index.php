@@ -21,13 +21,27 @@ else{
     <meta charset="UTF-8">
     <title>学生主页</title>
     <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet"/>
+    <link href="foundation-5.5.0/css/custom.css" rel="stylesheet" />
 </head>
 <body>
-<div class="row">
-    <div class="large-6 large-offset-3">
-        <h2>学生主页</h2>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="index.html">Home</a></h1>
+        </li>
+    </ul>
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+    </section>
+</nav>
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>学生主页</h2>
+            <h4>可重新填写姓名，密码等进行更新操作</h4>
+        </div>
     </div>
-</div>
+</header>
 <div class="row">
     <form class="large-4 large-offset-4" action="update_stu.php" method="post" enctype="multipart/form-data">
         <label>Name</label>
@@ -72,14 +86,8 @@ else{
         <br>
         <br>
         <input class="small radius button left" type="submit" value="Update">
-        <input class="small radius button right" type="button" value="返回主页" onclick="return_home()">
     </form>
 </div>
 
-<script type="text/javascript">
-    function return_home(){
-        location.href = "index.html";
-    }
-</script>
 </body>
 </html>

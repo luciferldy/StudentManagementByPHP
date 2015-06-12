@@ -25,7 +25,10 @@ if(isset($_REQUEST['internet'])){
 }
 
 $grade = $_REQUEST["grades"];
-$remark = $_REQUEST["remark"];
+if(isset($_REQUEST["remark"]))
+    $remark = $_REQUEST["remark"];
+else
+    $remark = "";
 
 # handle password
 if($password != $re_password){

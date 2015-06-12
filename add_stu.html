@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>管理员添加学生</title>
     <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet" />
+    <link href="foundation-5.5.0/css/custom.css" rel="stylesheet" />
 </head>
 <body>
-<div class="row">
-    <div class="large-6 large-offset-3 columns">
-        <h2>管理员添加学生</h2>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="index.html">Home</a></h1>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <!-- Left Nav Section -->
+        <ul class="left">
+            <li><a href="admin_index.html">Administrator</a></li>
+            <li><a href="query_stu.html">Query Student</a> </li>
+        </ul>
+        <ul class="right">
+            <li><a href="https://github.com/MaybeMercy/StudentManagementByPHP">Fork me on GitHub</a></li>
+        </ul>
+    </section>
+</nav>
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>管理员添加学生</h2>
+            <h4>填写完所有信息后点击提交</h4>
+        </div>
     </div>
-</div>
+</header>
 <div class="row">
     <form action="add_stu.php" method="post" enctype="multipart/form-data" class="large-4 large-offset-4">
         <label>Name</label>
@@ -51,7 +74,7 @@
         <label>Grades</label>
         <input type="number" name="grades" min="0" max="100" value="0"/>
         <label>Remark</label>
-        <input type="text" name="remark" value=""/>
+        <textarea type="text" name="remark" ></textarea>
         <br>
         <br>
         <input class="small radius button left off" type="submit" value="Submit" >

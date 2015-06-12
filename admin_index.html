@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <title>管理员主页</title>
     <link href="foundation-5.5.0/css/foundation.min.css" rel="stylesheet" />
+    <link href="foundation-5.5.0/css/custom.css" rel="stylesheet" />
 </head>
 <body>
-<div class="row">
-    <div class="large-6 large-offset-3">
-        <h2>管理员主页</h2>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="index.html">Home</a></h1>
+        </li>
+    </ul>
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="left">
+            <li><a href="add_stu.html">Add Student</a></li>
+            <li><a href="query_stu.html">Query Student</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="https://github.com/MaybeMercy/StudentManagementByPHP">Fork me on GitHub</a></li>
+        </ul>
+    </section>
+</nav>
+<header>
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>管理员，您好</h2>
+            <h4>选择添加学生或查询学生</h4>
+        </div>
     </div>
-</div>
-<div class="row large-8">
-    <div class="large-4 columns">
-        <button class="radius" id="add_stu" value="添加学生" onclick="add_stu()">添加学生</button>
-    </div>
-    <div class="large-4 columns">
-        <button class="radius" id="query_stu" value="查询学生" onclick="query_stu()">查询学生</button>
-    </div>
-    <div class="large-4 columns">
-        <button class="radius" type="button" value="返回主页" onclick="return_home()">返回主页</button>
-    </div>
-
-</div>
-
-<script type="text/javascript">
-    function add_stu(){
-        location.href="add_stu.html";
-    }
-    function query_stu(){
-        location.href="query_stu.html";
-    }
-    function return_home(){
-        location.href = "index.html";
-    }
-</script>
+</header>
 </body>
 </html>

@@ -1,0 +1,12 @@
+header{
+background: url(../img/marquee-stars.svg) rgb(7, 78, 104);
+background-size: cover;
+padding: 22px 0;
+margin: 0 0 22px 0;
+}
+header h2{
+color: 	rgb(255, 255, 255)
+}
+header h4{
+color: 	rgb(255, 255, 255)
+}
