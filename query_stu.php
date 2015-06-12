@@ -122,7 +122,7 @@ if(!$result){
 }else{
     while($item = $result->fetchArray()){
         $tr = "<tr>";
-        $tr .= "<td class='large-1'><img src=".$item['avatar']."/></td>";
+        $tr .= "<td class='large-1'><img src=".$item['avatar']."></td>";
         $tr .= "<td>".$item['name']."</td>";
         $tr .= "<td>".$item['class']."</td>";
         $tr .= "<td>".$item['student_number']."</td>";

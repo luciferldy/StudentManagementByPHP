@@ -67,64 +67,12 @@
       <file leaf-file-name="student_index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student_index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5745063" vertical-offset="0" max-vertical-offset="1960">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.60240966" vertical-offset="1170" max-vertical-offset="1960">
+              <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
               <folding>
-                <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-                <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+                <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+                <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1060">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_stu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query_stu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1520">
-              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_stu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query_stu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="2960">
-              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-              <folding>
-                <marker date="1434072149035" expanded="true" signature="1528:1549" placeholder="select * fro..student..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_stu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add_stu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="1800">
-              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="820">
-              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,12 +93,12 @@
         <option value="$PROJECT_DIR$/handle_db.php" />
         <option value="$PROJECT_DIR$/student_index.html" />
         <option value="$PROJECT_DIR$/log_in_auth.php" />
-        <option value="$PROJECT_DIR$/add_stu.php" />
-        <option value="$PROJECT_DIR$/update_stu.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/add_stu.html" />
         <option value="$PROJECT_DIR$/admin_index.html" />
         <option value="$PROJECT_DIR$/query_stu.html" />
+        <option value="$PROJECT_DIR$/update_stu.php" />
+        <option value="$PROJECT_DIR$/add_stu.php" />
         <option value="$PROJECT_DIR$/query_stu.php" />
         <option value="$PROJECT_DIR$/student_index.php" />
       </list>
@@ -347,8 +295,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="1660">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
-            <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-            <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+            <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+            <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -366,7 +314,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1126" max-vertical-offset="1780">
           <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
           <folding>
-            <marker date="1434072149035" expanded="true" signature="1528:1549" placeholder="select * fro..student..." />
+            <marker date="1434073492520" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -383,8 +331,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2580">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -394,8 +342,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="1660">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
-            <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-            <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+            <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+            <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -413,7 +361,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1126" max-vertical-offset="1780">
           <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
           <folding>
-            <marker date="1434072149035" expanded="true" signature="1528:1549" placeholder="select * fro..student..." />
+            <marker date="1434073492520" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -430,8 +378,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2320">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -455,8 +403,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-            <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+            <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+            <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -474,8 +422,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -492,8 +440,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="259" max-vertical-offset="1680">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="21" />
           <folding>
-            <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-            <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+            <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+            <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -518,8 +466,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1580">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -536,8 +484,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="1560">
           <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -576,8 +524,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -609,8 +557,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="800">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -635,8 +583,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="800">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -661,8 +609,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="800">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -679,39 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06734007" vertical-offset="0" max-vertical-offset="594">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_stu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.931034" vertical-offset="1339" max-vertical-offset="2520">
-          <caret line="111" column="50" selection-start-line="111" selection-start-column="50" selection-end-line="111" selection-end-column="50" />
-          <folding>
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1434068496300" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update_stu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.241379" vertical-offset="0" max-vertical-offset="1920">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding>
-            <marker date="1434068627488" expanded="true" signature="-1:-1" placeholder="UPDATE stude..." />
-            <marker date="1434068627488" expanded="true" signature="-1:-1" placeholder="update stude..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6632a553/7e491a97-2607-4184-8287-989445d9029b/..student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="820">
-          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/add_stu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="1800">
@@ -763,39 +670,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/query_stu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1060">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.20654045" vertical-offset="0" max-vertical-offset="1520">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query_stu.html">
+    <entry file="file://$PROJECT_DIR$/admin_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1520">
+        <state vertical-scroll-proportion="0.20654045" vertical-offset="0" max-vertical-offset="820">
           <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.655172" vertical-offset="0" max-vertical-offset="1060">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_stu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.99827886" vertical-offset="0" max-vertical-offset="1920">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <marker date="1434072973720" expanded="true" signature="-1:-1" placeholder="UPDATE stude..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/6632a553/7e491a97-2607-4184-8287-989445d9029b/..student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/query_stu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="2960">
-          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.5851979" vertical-offset="2160" max-vertical-offset="2960">
+          <caret line="125" column="44" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
           <folding>
-            <marker date="1434072149035" expanded="true" signature="1528:1549" placeholder="select * fro..student..." />
+            <marker date="1434073492520" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_stu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9621342" vertical-offset="1560" max-vertical-offset="2500">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1434073435610" expanded="true" signature="-1:-1" placeholder="select * fro..student..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/student_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5745063" vertical-offset="0" max-vertical-offset="1960">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.60240966" vertical-offset="1170" max-vertical-offset="1960">
+          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
-            <marker date="1434072157480" expanded="true" signature="138:181" placeholder="select * fro..student..." />
-            <marker date="1434072157480" expanded="true" signature="239:314" placeholder="..." />
+            <marker date="1434073685341" expanded="true" signature="138:181" placeholder="select * fro..student..." />
+            <marker date="1434073685341" expanded="true" signature="239:314" placeholder="..." />
           </folding>
         </state>
       </provider>

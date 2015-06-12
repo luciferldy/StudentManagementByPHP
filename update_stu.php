@@ -32,7 +32,7 @@ else
 
 # handle password
 if($password != $re_password){
-    echo "<script>location.href=\"add_stu.html\"</script>";
+    echo "<script>alert(\"password not match!\");location.href=\"add_stu.html\"</script>";
     return;
 }
 

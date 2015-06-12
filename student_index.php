@@ -54,25 +54,25 @@ else{
         <input type="number" name="class" value="<?php echo $item['class'];?>" readonly>
         <label>Student Number</label>
         <input type="text" name="std_number" value="<?php echo $item['student_number'];?>" readonly/>
-        <label>Sex:</label>
+        <label>Sex</label>
         <input type="text" name="sex" value="<?php echo $item['sex']?>" readonly><br>
-        Hobby:<br>
+        <label>Hobby</label>
         <?php
-        var_dump($item['hobby']);
+        # var_dump($item['hobby']);
         $hobby = explode(',', $item['hobby']);
         # var_dump($hobby);
         ?>
         <input id="cs" type="checkbox" name="internet[]" value="cs"  <?php if(in_array("cs", $hobby)){echo "checked";}?> />
-        <label for="cs"></label>
+        <label for="cs">CS</label>
         <br>
         <input id="economics" type="checkbox" name="internet[]" value="economics" <?php if(in_array("economics", $hobby)){echo "checked";}?> />
-        <label for="economics"></label>
+        <label for="economics">Economics</label>
         <br>
         <input id="trip" type="checkbox" name="internet[]" value="trip" <?php if(in_array("trip", $hobby)){echo "checked";}?> />
-        <label for="trip"></label>
+        <label for="trip">Trip</label>
         <br>
         <input id="sleep" type="checkbox" name="internet[]" value="sleep" <?php if(in_array("sleep", $hobby)){echo "checked";}?> />
-        <label for="sleep"></label>
+        <label for="sleep">Sleep</label>
         <br>
         <label>Avatar</label>
         <img class="th" src="<?php echo $item['avatar'];?>" /><br><br>

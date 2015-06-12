@@ -25,11 +25,10 @@ $hobby = "";
 
 if(isset($_REQUEST['internet'])){
     $checkbox = $_REQUEST['internet'];
-    echo $_REQUEST['internet'];
     if(count($checkbox)==0)
         $hobby = "";
     else
-    $hobby = implode(",",$checkbox);
+        $hobby = implode(",",$checkbox);
 }
 
 $grade = $_REQUEST["grades"];
@@ -40,13 +39,13 @@ else
 
 # handle password
 if($password != $re_password){
-    echo "<script>location.href=\"add_stu.html\"</script>";
+    echo "<script>alert(\"password not match!\");location.href=\"add_stu.html\"</script>";
     return;
 }
 # 文件处理发生错误
 $avatar = handleFile($student_number);
 if(!$avatar){
-    echo "<script>location.href=\"add_stu.html\"</script>";
+    echo "<script>;location.href=\"add_stu.html\"</script>";
     return;
 }
 
